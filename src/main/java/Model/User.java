@@ -20,9 +20,9 @@ public class User {
         this.email = email;
         this.isDeleted = false;
     }
+
     @Override
     public String toString() {
-        return String.format("ID: %d | UUID: %s | Name: %s | Email: %s | isDeleted: %b",
-                id, uuid, name, email, isDeleted);
+        return String.format("\n"+"ID:"+id+"\n"+"UUID:"+uuid+"\n"+"Name:"+name+"\n"+"Email:"+email);
     }
 }

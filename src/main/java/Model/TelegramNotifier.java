@@ -19,7 +19,6 @@ public class TelegramNotifier {
         }
     }
 }
-
 class TelegramBot extends org.telegram.telegrambots.bots.TelegramLongPollingBot {
     private final String token;
 
@@ -39,6 +38,5 @@ class TelegramBot extends org.telegram.telegrambots.bots.TelegramLongPollingBot 
 
     @Override
     public void onUpdateReceived(org.telegram.telegrambots.meta.api.objects.Update update) {
-        // Not used for notifications
     }
 }

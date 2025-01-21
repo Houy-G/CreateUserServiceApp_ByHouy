@@ -18,7 +18,7 @@ public class UserManagementApp {
 
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1 -> createUser();
@@ -61,7 +61,7 @@ public class UserManagementApp {
         String email = scanner.nextLine();
         System.out.print("Set as deleted? (true/false): ");
         boolean isDeleted = scanner.nextBoolean();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         if (userService.updateUserByUuid(uuid, name, email, isDeleted)) {
             System.out.println("User updated successfully.");
