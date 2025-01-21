@@ -23,6 +23,6 @@ public class User {
 
     @Override
     public String toString() {
-        return String.format("\n"+"ID:"+id+"\n"+"UUID:"+uuid+"\n"+"Name:"+name+"\n"+"Email:"+email);
+        return String.format("\n"+"ID: "+id+"\n"+"UUID: "+uuid+"\n"+"Name: "+name+"\n"+"Email: "+email);
     }
 }
